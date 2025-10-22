@@ -1,0 +1,98 @@
+# .gitignore for C projects
+# Ignore object files, libraries, and executables
+*.o
+*.obj
+*.a
+*.so
+*.dylib
+*.dll
+*.exe
+*.out
+*.app
+
+# Precompiled headers
+*.gch
+*.pch
+
+# Dependency and build files
+*.d
+*.gcno
+*.gcda
+*.prof
+
+# Build directories and build system files
+/build/
+/bin/
+/obj/
+Debug/
+Release/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+CTestTestfile.cmake
+Makefile
+Makefile.in
+Makefile.am
+config.status
+config.log
+
+# Autotools / generated files
+autom4te.cache/
+install-sh
+missing
+*.m4
+
+# Packaging / distribution
+dist/
+dist-*/
+*.tar.gz
+*.zip
+
+# IDEs and editors
+.vscode/
+.idea/
+*.suo
+*.user
+*.userprefs
+*.sln
+*.vcxproj*
+*.project
+.settings/
+*.code-workspace
+
+# Editors swap/temp files
+*~
+*.swp
+*.swo
+.#*
+*.tmp
+
+# macOS
+.DS_Store
+*.dSYM
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Tags, cscope, and other indexes
+tags
+TAGS
+cscope.out
+cscope.*
+ctags
+
+# Logs and temporary files
+*.log
+tmp/
+temp/
+
+# Coverage reports
+coverage/
+lcov-report/
+
+# Optional: ignore local config / secrets
+.env
+.env.local
