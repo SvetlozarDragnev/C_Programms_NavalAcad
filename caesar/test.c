@@ -6,7 +6,7 @@
 
 int main(int argc, string argv[])
 {
-    if (argc != 2) // трябва точно един аргумент
+    if (argc != 2) 
     {
         printf("Usage: ./caesar key\n");
         return 1;
@@ -22,7 +22,7 @@ int main(int argc, string argv[])
         }
     }
 
-    int key = atoi(key_str) % 26; // нормализираме ключа
+    int key = atoi(key_str) % 26;
     string text = get_string("plaintext: ");
 
     printf("ciphertext: ");
